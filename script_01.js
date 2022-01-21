@@ -18,7 +18,7 @@
 
 /* 02a. Theorie: Schleifen (for-schleife) */
 
-/* For -Schleife als Wiederholungs-Struktur */
+/* For -Schleife als allg. Wiederholungs-Struktur */
 
 // Inkrement (untere Grenze --> obere Grenze)
 // for (let i = 10; i <= 20; i++) {
@@ -35,6 +35,11 @@
 //     output("index i: " + i);
 // }
 
+/* 02b. For-Schleife für Array-Index (Iteration)*/
+let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
+for (let i = 0; i < arr.length; i++) {
+     output(arr[i]);
+}
 
 
 /*** 01. Funktionalität mit Einzelparametern */
