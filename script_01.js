@@ -124,12 +124,19 @@ function getSentenceArr(arr) {
 // Transponierung:  untereinander ---> nebeneinander
 // Helge Schneider: Anananandereihung ...
 
-output(getSentenceArr2(["Ich","bin","Max","Mütze"]));
+output(getSentenceArr2(["Ich","bin","Maxine","Mützerich"]));
+output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+output(getSentenceArr2(["Ich","bin","Max"]));
+output(getSentenceArr2([]));
 function getSentenceArr2(arr) {
 
     const gap   = " ";
     const punct = ".";
     let str = "";
+
+    if (arr.length == 0) {
+        return "Das war nix!";
+    }
 
     for (let i = 0; i < arr.length; i++) {
 
@@ -137,13 +144,12 @@ function getSentenceArr2(arr) {
         // wenn ich das letzte Element habe -->  punct
         // a = a + 1 || a += 1  
 
-        // if (condition) {
-            
-        // } else {
-            
-        // }
-
-       str += arr[i] + gap // Text
+        if (i != arr.length -1) {
+            str += arr[i] + gap;
+        } else {
+            str += arr[i] + punct; 
+        }
+       
     }
 
     return str;
