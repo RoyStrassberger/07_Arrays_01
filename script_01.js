@@ -73,20 +73,15 @@ Solange die Variable existiert, bleibt dieser erhalten
 hier: Verkettung eines Strings // Transponierung
 */
 
-let str = "";
-let gap = " ";
-let addStr = "Test";
-for (let i = 0; i <= 5; i++) {
-    // output("in der loop: " + str);
-    // a = a + 1;  // Numerik
-    str = str + addStr + gap // Text
-}
-output("nach der loop: " + str);
-
-
-
-
-
+// let str = "";
+// let gap = " ";
+// let addStr = "Test";
+// for (let i = 0; i <= 5; i++) {
+//     // output("in der loop: " + str);
+//     // a = a + 1;  // Numerik
+//     str = str + addStr + gap // Text
+// }
+// output("nach der loop: " + str);
 
 /*** 01. Funktionalität mit Einzelparametern */
 // --> "Ich bin Max Mütze."
@@ -129,22 +124,27 @@ function getSentenceArr(arr) {
 // Transponierung:  untereinander ---> nebeneinander
 // Helge Schneider: Anananandereihung ...
 
-// output(getSentenceArr2(["Ich","bin","Max","Mütze"]));
+output(getSentenceArr2(["Ich","bin","Max","Mütze"]));
 function getSentenceArr2(arr) {
 
     const gap   = " ";
     const punct = ".";
+    let str = "";
 
     for (let i = 0; i < arr.length; i++) {
-        output(arr[i]);
+
+        // wenn ich noch NICHT das letzte Element habe --> gap
+        // wenn ich das letzte Element habe -->  punct
+        // a = a + 1 || a += 1  
+
+        // if (condition) {
+            
+        // } else {
+            
+        // }
+
+       str += arr[i] + gap // Text
     }
-
-
-    let str   =     arr[0] + gap +
-                    arr[1] + gap +
-                    arr[2] + gap +
-                    arr[3] + 
-                    punct;
 
     return str;
 }
